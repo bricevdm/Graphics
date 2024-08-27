@@ -75,7 +75,7 @@ namespace UnityEngine.Rendering
             m_TempColliders = new List<Collider>(8);
             m_ComponentsDefaultState = new List<VolumeComponent>();
 
-            ReloadBaseTypes();
+            //ReloadBaseTypes();
 
             m_DefaultStack = CreateStack();
             stack = m_DefaultStack;
