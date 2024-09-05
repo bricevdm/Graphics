@@ -75,7 +75,10 @@ namespace UnityEngine.Rendering
             m_TempColliders = new List<Collider>(8);
             m_ComponentsDefaultState = new List<VolumeComponent>();
 
-            //ReloadBaseTypes();
+#if UNITY_EDITOR
+			// crashes at random on build
+            ReloadBaseTypes();
+#endif
 
             m_DefaultStack = CreateStack();
             stack = m_DefaultStack;
